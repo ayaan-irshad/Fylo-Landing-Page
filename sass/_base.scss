@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    height: 85vh;
+    background: radial-gradient(circle at bottom right, rgba(121,115,231,1) 13%, rgba(40,35,133,1) 66%, rgba(40,35,133,1) 90%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); 
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 4.5rem 7rem;
+
+    }
+
+    &__buttons {
+              
+        &-1 {                
+            background-color: transparent;
+            padding: .5rem 2.5rem;               
+        }
+       
+        &-2 {
+            background-color: $color-green;
+            padding: .5rem 2.5rem;
+            border-radius: 2px;
+            
+        }
+    }
+
+
+    &__box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0rem 7rem;
+
+    }
+
+
+
+
+    &__box-right {
+        margin-top: 10rem;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        width: 50%;
+
+
+    }
+
+    &__heading {
+        font-size: 4rem;
+        
+
+
+    }
+
+    &__button {
+        font-size: 2rem;
+        padding: 1.3rem 6rem;
+        background-color: $color-green;
+        border-radius: 4px;
+        margin-top: 4rem;        
+    }
+
+    &__hero {
+        width: 380px;
+    }
+}
