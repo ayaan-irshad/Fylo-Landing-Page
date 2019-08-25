@@ -21,15 +21,16 @@
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
 
 html {
   font-size: 62.5%; }
 
 .header {
-  height: 85vh;
+  height: 100vh;
   background: radial-gradient(circle at bottom right, #7973e7 13%, #282385 66%, #282385 90%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
   .header__top {
     display: flex;
@@ -62,3 +63,79 @@ html {
     margin-top: 4rem; }
   .header__hero {
     width: 380px; }
+
+.features {
+  margin: 10rem 7rem;
+  display: grid;
+  grid-template-columns: min-content repeat(2, minmax(20rem, max-content));
+  grid-template-rows: 20vh repeat(2, minmax(20rem, max-content)) 20vh;
+  grid-column-gap: 20rem; }
+  .features__heading {
+    grid-row: 1  / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    color: #070439;
+    font-size: 3rem; }
+  .features__image {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    width: 300px; }
+  .features__text-box-1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3; }
+  .features__text-box-2 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4; }
+  .features__text-box-3 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3; }
+  .features__text-box-4 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4; }
+  .features__h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #070439; }
+  .features__text {
+    font-size: 1.5rem;
+    color: gray;
+    line-height: 1.5; }
+  .features__form {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .features__form--heading {
+      color: #070439;
+      font-size: 3rem;
+      margin-top: 10rem;
+      margin-bottom: 3rem; }
+    .features__form--text {
+      width: 60%;
+      font-size: 1.5rem;
+      color: #282385;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      text-align: center; }
+    .features__form--box {
+      display: flex;
+      margin-bottom: 10rem; }
+    .features__form--input {
+      width: 30rem;
+      padding: 1rem 2rem;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+      margin-right: 3rem; }
+      .features__form--input::placeholder {
+        color: gray; }
+    .features__form--button {
+      background-color: #05d69b;
+      padding: 1rem 6rem;
+      font-size: 1.4rem;
+      border-radius: 3px;
+      font-family: 'Raleway', sans-serif; }
