@@ -35,12 +35,18 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 40%; } }
 
 .header {
   height: 100vh;
   background: radial-gradient(circle at bottom right, #7973e7 13%, #282385 66%, #282385 90%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
+  @media only screen and (max-width: 62.5em) {
+    .header {
+      height: 105vh; } }
   .header__top {
     display: flex;
     justify-content: space-between;
@@ -57,13 +63,28 @@ html {
     align-items: flex-start;
     justify-content: space-between;
     padding: 0rem 7rem; }
+    @media only screen and (max-width: 62.5em) {
+      .header__box {
+        flex-wrap: wrap-reverse;
+        justify-content: center; } }
   .header__box-right {
     margin-top: 10rem;
     font-family: 'Raleway', sans-serif;
     color: #fff;
     width: 50%; }
+    @media only screen and (max-width: 62.5em) {
+      .header__box-right {
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .header__heading {
     font-size: 4rem; }
+    @media only screen and (max-width: 62.5em) {
+      .header__heading {
+        text-align: center;
+        font-size: 3rem; } }
   .header__button {
     font-size: 2rem;
     padding: 1.3rem 6rem;
@@ -71,7 +92,7 @@ html {
     border-radius: 4px;
     margin-top: 4rem; }
   .header__hero {
-    width: 380px; }
+    width: 38rem; }
 
 .features {
   margin: 10rem 7rem;
@@ -79,6 +100,13 @@ html {
   grid-template-columns: min-content repeat(2, minmax(20rem, max-content));
   grid-template-rows: 20vh repeat(2, minmax(20rem, max-content)) 20vh;
   grid-column-gap: 20rem; }
+  @media only screen and (max-width: 62.5em) {
+    .features {
+      grid-column-gap: 10rem;
+      grid-row-gap: 5rem;
+      margin: 5rem 7rem;
+      grid-template-rows: 10vh repeat(2, minmax(10rem, max-content)) 10vh;
+      grid-template-columns: min-content repeat(2, minmax(10rem, max-content)); } }
   .features__heading {
     grid-row: 1  / 2;
     grid-column: 1 / -1;
@@ -88,7 +116,7 @@ html {
   .features__image {
     grid-row: 2 / 4;
     grid-column: 1 / 2;
-    width: 300px; }
+    width: 30rem; }
   .features__text-box-1 {
     grid-row: 2 / 3;
     grid-column: 2 / 3; }
@@ -117,6 +145,9 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 62.5em) {
+      .features__form {
+        margin-top: -8rem; } }
     .features__form--heading {
       color: #070439;
       font-size: 3rem;
