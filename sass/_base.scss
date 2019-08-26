@@ -140,8 +140,6 @@ html {
 
     &__hero {
         width: 90%;
-
-
     }
 }
 
@@ -162,7 +160,6 @@ html {
     margin: 4rem 7rem;
     grid-template-rows: 10vh repeat(2, minmax(10rem, max-content)) 10vh;
     grid-template-columns: min-content repeat(2, minmax(10rem, max-content));
-
     }
 
     @media only screen and (max-width: $bp-medium) {
@@ -253,8 +250,6 @@ html {
         font-size: 2rem;
         margin-bottom: 2rem;
         color: $color-blue-very-dark;
-
-
     }
 
     &__text {
@@ -328,20 +323,16 @@ html {
         &--input {
             margin-right: 3rem;
 
-        @media only screen and (max-width: $bp-medium) {
-            margin-right: 0;
-            margin-bottom: 2rem;
+            @media only screen and (max-width: $bp-medium) {
+                margin-right: 0;
+                margin-bottom: 2rem;
 
-            &::placeholder {
-                color: $color-gray;
-                font-size: 2rem;
-                text-align: center;
-
+                &::placeholder {
+                    color: $color-gray;
+                    font-size: 2rem;
+                    text-align: center;
+                }
             }
-        }
-
-
-
         }
 
         &--button {
@@ -352,7 +343,6 @@ html {
             font-family: 'Raleway', sans-serif;
 
         }
-
     }
 }
 
