@@ -13,6 +13,15 @@
   .btn:active {
     transform: scale(1) translateY(0.5px); }
 
+.text-field {
+  width: 30rem;
+  padding: 1rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+  .text-field::placeholder {
+    color: gray; }
+
 *,
 *::before,
 *::after {
@@ -30,7 +39,7 @@ html {
 .header {
   height: 100vh;
   background: radial-gradient(circle at bottom right, #7973e7 13%, #282385 66%, #282385 90%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95vh);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
   .header__top {
     display: flex;
@@ -125,17 +134,75 @@ html {
       display: flex;
       margin-bottom: 10rem; }
     .features__form--input {
-      width: 30rem;
-      padding: 1rem 2rem;
-      border: 1px solid #fff;
-      border-radius: 3px;
-      box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
       margin-right: 3rem; }
-      .features__form--input::placeholder {
-        color: gray; }
     .features__form--button {
       background-color: #05d69b;
       padding: 1rem 6rem;
       font-size: 1.4rem;
       border-radius: 3px;
       font-family: 'Raleway', sans-serif; }
+
+.footer {
+  background-color: #070439;
+  margin-top: 20rem;
+  padding: 10rem 7rem;
+  -webkit-clip-path: polygon(0 0, 100% 25vh, 100% 100%, 0 100%);
+  display: flex; }
+  .footer__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    margin-top: 15rem; }
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline; }
+    .footer__info--logo {
+      margin-bottom: 3rem; }
+    .footer__info figure {
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: center;
+      color: #fff; }
+      .footer__info figure img {
+        margin-right: 1rem; }
+  .footer__box {
+    display: flex;
+    flex-direction: column; }
+    .footer__box h2 {
+      margin-bottom: 2rem;
+      color: #fff; }
+    .footer__box ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      list-style: none; }
+      .footer__box ul li {
+        margin: 7px 0px; }
+        .footer__box ul li a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.2rem;
+          font-family: 'Open Sans', sans-serif; }
+  .footer__form {
+    display: flex;
+    flex-direction: column;
+    width: 25%; }
+    .footer__form--text {
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      margin-bottom: 3rem; }
+    .footer__form--input {
+      margin-bottom: 1rem; }
+    .footer__form--button {
+      background-color: #05d69b;
+      padding: 1rem 6rem;
+      font-size: 1.4rem;
+      border-radius: 3px;
+      font-family: 'Raleway', sans-serif;
+      align-self: flex-end; }
