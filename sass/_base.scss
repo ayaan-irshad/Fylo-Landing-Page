@@ -19,11 +19,10 @@ html {
 
     @media only screen and (max-width: $bp-largest) {
         font-size: 50%;
-
     }
 
     @media only screen and (max-width: $bp-medium) {
-        font-size: 30%;
+        font-size: 40%;
 
     }
     
@@ -40,16 +39,43 @@ html {
     @media only screen and (max-width: $bp-largest) {
         height: 105vh;
     }
+    @media only screen and (max-width: $bp-medium) {
+        height: 97vh;
+        background: radial-gradient(circle at bottom right, rgba(121,115,231,1) 13%, rgba(40,35,133,1) 66%, rgba(40,35,133,1) 90%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90vh); 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90vh); 
+    }
 
+    @media only screen and (max-width: $bp-small) {
+        height: 97vh;
+        background: radial-gradient(circle at bottom right, rgba(121,115,231,1) 13%, rgba(40,35,133,1) 66%, rgba(40,35,133,1) 90%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92vh); 
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92vh); 
+    }
+
+    
     &__top {
         display: flex;
         justify-content: space-between;
         padding: 4.5rem 7rem;
+        flex-wrap: wrap;
 
+        @media only screen and (max-width: $bp-small) {
+        padding: 3.5rem 4rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+           justify-content: center;
+        }
+
+        
     }
 
     &__logo {
         
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 5rem;
+        }
 
     }
 
@@ -86,6 +112,8 @@ html {
 
         @media only screen and (max-width: $bp-small) {
             margin-top: 2rem;
+            padding: 0rem 4rem;
+
         }
     }
 
@@ -117,7 +145,7 @@ html {
         max-width: 52%;
 
         @media only screen and (max-width: $bp-small) {
-            max-width: 70%;
+            max-width: 60%;
         }
 
     }
@@ -126,7 +154,10 @@ html {
     &__heading {
         font-size: 4rem;
         @media only screen and (max-width: $bp-large) {
+          font-size: 3rem;
           
+
+
         }
 
         @media only screen and (max-width: $bp-medium) {
@@ -140,12 +171,7 @@ html {
         padding: 1.3rem 6rem;
         background-color: $color-green;
         border-radius: 4px;
-        margin-top: 4rem;            
-        
-        @media only screen and (max-width: $bp-medium) {
-            font-size: 3rem;
-            
-        }
+        margin-top: 4rem;                
         
     }
 
@@ -153,6 +179,7 @@ html {
         width: 90%;
     }
 }
+
 
 //////////////////////////////////////////
 //// FEATURES SECTION
@@ -189,6 +216,11 @@ html {
 
     }
 
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 6rem 4rem;
+        }
+
     &__heading {
         grid-row: 1  / 2;
         grid-column: 1 / -1;
@@ -198,6 +230,12 @@ html {
 
         font-size: 3rem;
         text-align: center;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.5rem;
+        }
+
+
     }
 
     
@@ -261,12 +299,20 @@ html {
         font-size: 2rem;
         margin-bottom: 2rem;
         color: $color-blue-very-dark;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.5rem;
+            }
     }
 
     &__text {
         font-size: 1.5rem;
         color: $color-gray;
         line-height: 1.5;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+        }
     }
 
     // // FEATURES FORM // //
@@ -281,8 +327,7 @@ html {
         align-items: center;
 
 
-        @media only screen and (max-width: $bp-medium) {
-            margin-top: -8rem;
+        @media only screen and (max-width: $bp-medium) {  
             grid-row: 8 / 9;
             grid-column: 1 / -1;
         }
@@ -298,6 +343,15 @@ html {
             font-size: 2.5rem;
             text-align: center;
             }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 3.5rem;
+        } 
+
+        @media only screen and (max-width: $bp-small) {
+            margin-top: 20rem;
+        }     
+
         }
 
         &--text {
@@ -316,6 +370,10 @@ html {
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 600;
             }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 2rem;
+            }
         }
 
         &--box {
@@ -323,13 +381,16 @@ html {
             margin-bottom: 10rem;
 
             
-        @media only screen and (max-width: $bp-medium) {
-           flex-direction: column;
-           align-items: stretch;
+            @media only screen and (max-width: $bp-medium) {
+            flex-direction: column;
+            align-items: stretch;
 
-        }
-        }
+            }
 
+            @media only screen and (max-width: $bp-small) {
+                width: 100%;
+            }
+        }
 
         &--input {
             margin-right: 3rem;
@@ -344,6 +405,12 @@ html {
                     text-align: center;
                 }
             }
+
+            @media only screen and (max-width: $bp-small) {
+                width: 100%;
+                padding: 2rem 2rem;
+
+            }
         }
 
         &--button {
@@ -353,6 +420,11 @@ html {
             border-radius: 3px;
             font-family: 'Raleway', sans-serif;
 
+            @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 2rem 6rem;
+            }
         }
     }
 }
@@ -366,8 +438,19 @@ html {
     padding: 10rem 7rem;
  
     -webkit-clip-path: polygon(0 0, 100% 25vh, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 25vh, 100% 100%, 0 100%);
 
     display: flex;
+
+    @media only screen and (max-width: $bp-medium) {
+        -webkit-clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 10vh, 100% 100%, 0 100%);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        -webkit-clip-path: polygon(0 0, 100% 8vh, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 8vh, 100% 100%, 0 100%);
+    }
 
     &__wrapper {
         display: flex;
@@ -376,6 +459,15 @@ html {
         align-items: flex-start;
         height: 100%;
         margin-top: 15rem;
+
+        @media only screen and (max-width: $bp-large) {
+            flex-wrap: wrap;
+
+            & > * {
+                padding-left: 12vw;
+                margin-bottom: 5rem;
+            }
+        }   
     }
 
     &__info {
@@ -383,10 +475,19 @@ html {
         flex-direction: column;
         justify-content: space-between;   
         align-items: baseline;
+        
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 0 100%;
+            order: -2;
+        }
 
         &--logo {   
-
             margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-bottom: 10rem;
+
+            }
         }
        
         figure {
@@ -394,6 +495,12 @@ html {
             margin-bottom: 2rem;
             align-items: center;
             color: #fff;
+            font-size: 1.6rem;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 2rem;
+            }
+
             img {
                 margin-right: 1rem;
             }
@@ -403,10 +510,19 @@ html {
     &__box {
         display: flex;
         flex-direction: column; 
-        
+
+         @media only screen and (max-width: $bp-small) {
+            flex: 0 0 100%;
+        }
+
         h2 {
             margin-bottom: 2rem;
             color: #fff;
+            font-size: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 3rem;
+            }
         }
 
         ul {
@@ -421,8 +537,12 @@ html {
                 a {
                     text-decoration: none;
                     color: #fff;
-                    font-size: 1.2rem;
+                    font-size: 1.6rem;
                     font-family: 'Open Sans', sans-serif;
+
+                    @media only screen and (max-width: $bp-small) {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
@@ -430,20 +550,42 @@ html {
 
     // //  FOOTER FORM // //
 
+
     &__form {
         display: flex;
         flex-direction: column;
         width: 25%;
 
 
+        @media only screen and (max-width: $bp-large) {
+            flex: 0 0 100%;
+            order: -1;
+            align-self: center;
+            margin-bottom: 5rem;
+        }
 
+        @media only screen and (max-width: $bp-small) {
+            flex: 0 0 100%;
+            order: -1;
+        }
 
         &--text {
             color: #fff;
-            font-size: 1.3rem;
+            font-size: 1.6rem;
             font-family: 'Open Sans', sans-serif;
             font-weight: 600;
             margin-bottom: 3rem;
+
+            @media only screen and (max-width: $bp-large) {
+                width: 30rem;
+             }
+
+             @media only screen and (max-width: $bp-small) {
+                font-size: 2.2rem;
+                line-height: 2;
+                font-weight: 300;
+
+            }
         }
 
         &--input {
@@ -458,6 +600,14 @@ html {
             font-family: 'Raleway', sans-serif;
             
             align-self: flex-end;
+
+            @media only screen and (max-width: $bp-large) {
+               align-self: baseline;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                align-self: baseline;
+            }
         }
     }
 }
