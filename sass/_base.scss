@@ -85,7 +85,7 @@ html {
         }
 
         @media only screen and (max-width: $bp-small) {
-            margin-top: 10rem;
+            margin-top: 2rem;
         }
     }
 
@@ -115,17 +115,23 @@ html {
 
     &__box-left {
         max-width: 52%;
+
+        @media only screen and (max-width: $bp-small) {
+            max-width: 70%;
+        }
+
     }
 
 
     &__heading {
         font-size: 4rem;
         @media only screen and (max-width: $bp-large) {
-            font-size: 3rem;
+          
         }
 
         @media only screen and (max-width: $bp-medium) {
             text-align: center;
+            
         }
     }
 
@@ -134,7 +140,12 @@ html {
         padding: 1.3rem 6rem;
         background-color: $color-green;
         border-radius: 4px;
-        margin-top: 4rem;             
+        margin-top: 4rem;            
+        
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 3rem;
+            
+        }
         
     }
 
