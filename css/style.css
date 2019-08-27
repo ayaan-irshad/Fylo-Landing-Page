@@ -97,7 +97,7 @@ html {
         justify-content: center; } }
     @media only screen and (max-width: 28.125em) {
       .header__box {
-        margin-top: 2rem;
+        margin-top: 8rem;
         padding: 0rem 4rem; } }
   .header__box-right {
     margin-top: 10rem;
